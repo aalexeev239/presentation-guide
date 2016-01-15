@@ -6,6 +6,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="shower/themes/material/styles/screen-16x10.css">
+	<link rel="stylesheet" href="custom.css">
 </head>
 <body class="shower list">
 	<header class="caption">
@@ -73,29 +74,100 @@
 
 	</section>
 	<section class="slide">
+		<h2>Перед подготовкой слайдов</h2>
+		<p>Просмотрите, <a href="http://www.slideshare.net/vasilybogdanov/ss-32528473?qid=4e329c87-3607-48f3-b1a3-935f82c37485&v=default&b=&from_search=1" target="_blank">как не надо делать презентации</a>.</p>
+		<p>И почему <a href="http://rutorika.ru/samorazvitie/chemu-menedzheram-uchitsya-u-kopirayterov-i-naoborot/#more-1721" target="_blank">вредна терминология</a>.</p>
+	</section>
+	<section class="slide">
 		<h2>Структурируйте доклад</h2>
 		<p><strong>Вступление.</strong> Расскажите, чему посвящен рассказ. Обрисуйте план повествования.</p>
 		<p><strong>Основная часть.</strong> Последовательно расскройте все вопросы, упомянутые в плане.</p>
 		<p><strong>Заключение.</strong> Подведите итог. Предусмотрите место для вопросов. Дайте список полезных ресурсов. Укажите свои контакты.</p>
 	</section>
 	<section class="slide">
-		<h2>Перед подготовкой слайдов</h2>
-		<p>Просмотрите, <a href="http://www.slideshare.net/vasilybogdanov/ss-32528473?qid=4e329c87-3607-48f3-b1a3-935f82c37485&v=default&b=&from_search=1" target="_blank">как не надо делать презентации</a>.</p>
-		<p>И почему <a href="http://rutorika.ru/samorazvitie/chemu-menedzheram-uchitsya-u-kopirayterov-i-naoborot/#more-1721" target="_blank">вредна терминология</a>.</p>
-	</section>
-	<section class="slide">
 		<h2>Помните про лаконичность</h2>
-		<ul>
-			<li>Перегруженные информацией слайды все равно никто не читает.</li>
-			<li>Если тему нужно раскрыть подробнее, включите в слайд ссылки на доп. материалы.</li>
-			<li>Слайды несут вспомогательную роль к устному докладу. Не зачитывайте слайды.</li>
-		</ul>
+		<p class="next">Перегруженные информацией слайды все равно никто не читает.</p>
+		<p class="next">Если тему нужно раскрыть подробнее, включите в слайд ссылки на доп. материалы.</p>
+		<p class="next">Слайды несут вспомогательную роль к устному докладу. Не зачитывайте слайды.</p>
 	</section>
 	<section class="slide">
-		<h2>Добавляйте сравнения</h2>
-		<p>И ваш доклад расцветет, как кочан капусты!</p>
-		<p class="note">Тут придумать пример</p>
-		<p class="note">Чем сложнее тема, тем проще она должна рассказываться</p>
+		<h2>Придумайте сравнения и метафоры</h2>
+		<p class="next">Сложные вещи легко объяснить знакомыми образами и ситуациями. <br>Например, боксовая модель html отлично объясняется через коробки с котятами.</p>
+		<p class="next">А всю прелесть гита смогут оценить те, кто писал дипломы и курсовые под руководством дотошного научрука.</p>
+	</section>
+	<section class="slide">
+		<h2>Добавляйте образы</h2>
+
+		<div id="ninja-wrap">
+			<img src="pictures/ninja_1.png" height="422" width="750">
+			<img src="pictures/ninja_3.png" height="200" width="750" class="next">
+		</div>
+
+		<style>
+			#ninja-wrap {
+				text-align: center;
+				position: relative;
+			}
+
+			#ninja-wrap img {
+				position: relative;
+				z-index: 10;
+			}
+
+			#ninja-wrap .next {
+				position: absolute;
+				top: 200px;
+				left: 0;
+				right: 0;
+				margin: auto;
+				z-index: 5;
+				transition: top .4s;
+			}
+			#ninja-wrap .next.active {
+				top: 0;
+			}
+		</style>
+	</section>
+	<section class="slide">
+		<h2>Выберите тематику</h2>
+		<p>Если нужно придать слайдам живости, обратитесь к какому-нибудь популярному сюжету.</p>
+		<p>Нинзя, мстители, звездные войны, игра престолов, шерлок холмс, теория большого взрыва (сарказм), adventure times, my little pony... <br>Да все что угодно!</p>
+	</section>
+	<section class="slide" id="mult">
+		<div class="stripe next">
+			<h2>Главное не переборщить</h2>
+		</div>
+		<img src="pictures/mult.jpg" alt="" class="cover">
+
+		<style>
+			#mult {
+				background-color: #010101;
+			}
+
+			#mult h2 {
+				color: #fff;
+				margin: 0;
+				text-align: center;
+			}
+
+			#mult .stripe {
+				position: absolute;
+				left: 0;
+				right: 0;
+				padding: 20px;
+				background-color: rgba(0,0,0,0.6);
+				top: 70px;
+			}
+
+			#mult .next {
+				opacity: 0;
+				transition: opacity .2s;
+			}
+
+			#mult .next.active {
+				opacity: 1;
+			}
+		</style>
 	</section>
 	<section class="slide">
 		<h2>Shower</h2>
